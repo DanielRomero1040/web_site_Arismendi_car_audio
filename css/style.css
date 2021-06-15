@@ -703,6 +703,8 @@ footer .direccion span{
     position: relative;
     z-index: 1;
     transition: all 0.5s;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .consultaPrecio_boton::before{
@@ -713,6 +715,7 @@ footer .direccion span{
     border-radius: 8px;
     background: linear-gradient(180deg, #591CDC 0%, rgba(84, 42, 175, 0.91) 45.83%, #4E3A7A 100%);
     transition: all 0.5s ease;
+    text-decoration: none;  
 }
 
 .consultaPrecio_boton:hover::before{
@@ -727,11 +730,13 @@ footer .direccion span{
     width: 199px;
     height: 50px;
     filter: drop-shadow(1px 4px 7px rgba(0, 0, 0, 0.25));
+    text-decoration: none;
 }
 
 .consultaPrecio_boton:hover{
     color: #FFFFFF;
     border-radius: 8px;
+    text-decoration: none;
 }
 
 

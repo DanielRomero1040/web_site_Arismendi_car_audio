@@ -39,7 +39,7 @@ class ManagerDom{
               </div>
               <div class="card-footer d-flex flex-column">
                 <div clas="d-flex flex-row justify-content-center align-items-center">
-                  <button class="consultaPrecio_boton ">Consultá el precio<span><img src="../imagenes/icons/whatsappColor.svg" alt="" width="20px"> </span></button>
+                  <a class="consultaPrecio_boton " href="https://api.whatsapp.com/send?phone=5491157181985&text=Hola!%20estoy%20interesado%20en%20saber%20el%20precio%20de%20${element.nombre}">Consultá el precio<span><img src="../imagenes/icons/whatsappColor.svg" alt="" width="20px"> </span></a>
                 </div>                       
               </div>
           </div>
