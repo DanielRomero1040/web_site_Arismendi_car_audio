@@ -13,13 +13,13 @@ class ManagerDom{
               <div id="imagen${element.id}" class="carousel slide card-img-top" data-ride="carousel" data-interval="false">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src=${element.primeraImagen} class="d-block w-100 card-img-top" alt="...">
+                    <img src=${element.primeraImagen} class="d-block card-img-top" alt="...">
                   </div>
                   <div class="carousel-item">
-                    <img src=${element.segundaImagen} class="d-block w-100 card-img-top" alt="...">
+                    <img src=${element.segundaImagen} class="d-block card-img-top" alt="...">
                   </div>
                   <div class="carousel-item">
-                    <img src=${element.terceraImagen} class="d-block w-100 card-img-top" alt="...">
+                    <img src=${element.terceraImagen} class="d-block card-img-top" alt="...">
                   </div>
                 </div>
                 <a class="carousel-control-prev" href="#imagen${element.id}" role="button" data-slide="prev">
