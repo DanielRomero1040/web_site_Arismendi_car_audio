@@ -522,6 +522,11 @@ footer .direccion{
     padding-top: 0;
 }
 
+footer .direccion a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
 footer .direccion span{
     display: flex;
     justify-content: center;

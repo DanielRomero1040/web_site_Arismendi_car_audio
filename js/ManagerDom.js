@@ -39,7 +39,7 @@ class ManagerDom{
               </div>
               <div class="card-footer d-flex flex-column">
                 <div clas="d-flex flex-row justify-content-center align-items-center">
-                  <a class="consultaPrecio_boton " href="https://api.whatsapp.com/send?phone=5491124566055&text=Hola!%20estoy%20interesado%20en%20saber%20el%20precio%20de%20${element.nombre}">Consultá el precio<span><img src="../imagenes/icons/whatsappColor.svg" alt="" width="20px"> </span></a>
+                  <a class="consultaPrecio_boton " href="https://api.whatsapp.com/send?phone=5491124566055&text=Hola!%20estoy%20interesado%20en%20saber%20el%20precio%20de%20${element.nombre}" target="_blank">Consultá el precio<span><img src="../imagenes/icons/whatsappColor.svg" alt="" width="20px"> </span></a>
                 </div>                       
               </div>
           </div>
@@ -60,7 +60,7 @@ class ManagerDom{
           div.classList.add('m-3')
           div.innerHTML = `
             <div class="card h-90">
-                <a href="#"><img class="card-img-top" src=${element.primeraImagen} alt=""></a>
+                <img class="card-img-top" src=${element.primeraImagen} alt="">
                 
                 <div class="card-footer d-flex flex-column">
                   <h4 class="card-title">
