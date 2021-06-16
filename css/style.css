@@ -1526,7 +1526,7 @@ footer .direccion span{
         display: none;
     }
     
-    .carouselCaption button{    
+    .carouselCaption a{    
         display: none;
     }   
 
