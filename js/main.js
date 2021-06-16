@@ -104,6 +104,8 @@ let animacionCarga = () => {
 
 //------------------------ Eventos ----------------------------------
 
-managerDOM.filtrarCategoria('tamano','change',managerDOM.filtrarPor);
-managerDOM.filtrarCategoria('multimedia','change',managerDOM.filtrarPor);
-managerDOM.filtrarCategoria('software','change',managerDOM.filtrarPor);
+managerDOM.filtrarCategoria('buscarFiltros','click',managerDOM.filtrarPor);
+// managerDOM.filtrarCategoria('multimedia','change',managerDOM.filtrarPor);
+// managerDOM.filtrarCategoria('software','change',managerDOM.filtrarPor);
+managerDOM.filtrarCategoria('borrarFiltros','click',managerDOM.borrarFiltrado);
+

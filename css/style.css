@@ -11,6 +11,8 @@ html{
     font-size: 62.5%;
 }
 
+/*-------------------------Header--------------------------*/
+
 header{
     background: #000000;
     /* width: 100vw; */
@@ -139,9 +141,7 @@ header{
     display: none;
 }
 
-/* #carouselArismendi{
-    width: 100vw;
-} */
+/*-------------------------- Sección carousel y banners -----------------------------*/
 
 .carousel-indicators > li{
     width: 10px;
@@ -155,22 +155,19 @@ header{
 }
 
 .banner1{
-    background-image: url("../imagenes/fondoBanner1.jpg");
-    /* width: 100vw; */
+    background-image: url("../imagenes/fondoBanner1.jpg");    
     height: 645px;
     background-position: center;
     background-size: cover;
 }
 .banner2{
     background-image: url("../imagenes/fondoBanner2.jpg");
-    /* width: 100vw; */
     height: 645px;
     background-position: center;
     background-size: cover;
 }
 .banner3{
     background-image: url("../imagenes/fondoBanner3.jpg");
-    /* width: 100vw; */
     height: 645px;
     background-position: center;
     background-size: cover;
@@ -208,7 +205,10 @@ header{
     text-align: start;
 }
 
-.carouselCaption button{    
+.carouselCaption a{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
     top: 100%;
     left: 0% ;
     position: absolute;
@@ -227,9 +227,10 @@ header{
     transition: 1s;
 }
 
-.carouselCaption button:hover{
+.carouselCaption a:hover{
     background-color: rgb(0, 0, 0);
     border: 1.5px solid rgba(0, 0, 0, 0.97);
+    text-decoration: none;
 }
 
 .bannerDigitalizacion {
@@ -291,9 +292,9 @@ header{
     border: 1.5px solid rgba(0, 0, 0, 0.97);
 }
 
+/*----------------------Contenido Index-----------------------*/
+
 .home{
-    /* width: 100vw; */
-    /* height: 1040px; */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows:0.5fr 0.5fr 0.5fr 0.5fr;
@@ -407,7 +408,7 @@ header{
     justify-content: center;
 }
 
-.historia button{
+.historia a{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -430,7 +431,7 @@ header{
     transition: color 0.5s;
 }
 
-.historia button::before{
+.historia a::before{
     position: absolute;
     width: 218px;
     height: 50px;
@@ -443,7 +444,7 @@ header{
     opacity: 0;
 }
 
-.historia button:hover::before{
+.historia a:hover::before{
     opacity: 1;
     font-style: normal;
     font-weight: 500;
@@ -456,11 +457,13 @@ header{
     width: 218px;
     height: 50px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    text-decoration: none;
 
 }
 
-.historia button:hover{
+.historia a:hover{
     color: white;
+    text-decoration: none;
 }
 
 .historia h3{
@@ -490,6 +493,9 @@ header{
 .audio span{
     padding-right: 10px;
 }
+
+/*----------------------------------------------------*/
+
 
 footer{
     display: flex;
@@ -524,18 +530,11 @@ footer .direccion span{
     height: 37px;
 }
 
-
 .redes a{
     color: white;
     transition: all 0.5s;    
     line-height: 0;
     margin-top: 10px;
-}
-
-
-
-.redes a:hover{
-    color: #d36d51d2;
 }
 
 .navegacion, .redes, .direccion{
@@ -563,7 +562,7 @@ footer .direccion span{
     color: white;
 }
 
-/*------------Digitalizacion-----------------*/
+/*------------Digitalizacion -----------------*/
 
 .seccionDigitalizacion{
     padding: 5rem 0;
@@ -739,7 +738,6 @@ footer .direccion span{
     text-decoration: none;
 }
 
-
 .consultaPrecio_texto{
     width: 270px;
     height: 98px;
@@ -755,8 +753,6 @@ footer .direccion span{
 
 /*------------------ Car Audio-------------------*/
 
-
-
 .bannerCarAudio h5{    
     width: 563px;
     height: 110px;   
@@ -768,7 +764,6 @@ footer .direccion span{
     color: #FFFFFF;
     text-align: start;
 }
-
 
 .bannerCarAudio a{    
     top: 110%;
@@ -796,7 +791,6 @@ footer .direccion span{
     background-color: rgb(0, 0, 0);
     border: 1.5px solid rgba(0, 0, 0, 0.97);
 }
-
 
 /*------------------Car Audio & Equipo De DJ-------------------*/
 
@@ -848,7 +842,6 @@ footer .direccion span{
     background-color: rgb(0, 0, 0);
     border: 1.5px solid rgba(0, 0, 0, 0.97);
 }
-
 
 
 /*------------- Filtros -------------------*/
@@ -931,8 +924,7 @@ footer .direccion span{
 }
 
 
-
-  @media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1100px) {
 
        /*----------------------- Footer ---------------------------*/
 
@@ -1190,7 +1182,7 @@ footer .direccion span{
         justify-content: center;
     }
     
-    .historia button{
+    .historia a{
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
@@ -1213,7 +1205,7 @@ footer .direccion span{
         transition: color 0.5s;
     }
     
-    .historia button::before{
+    .historia a::before{
         position: absolute;
         width: 218px;
         height: 50px;
@@ -1226,7 +1218,7 @@ footer .direccion span{
         opacity: 0;
     }
     
-    .historia button:hover::before{
+    .historia a:hover::before{
         opacity: 1;
         font-style: normal;
         font-weight: 500;
@@ -1239,11 +1231,12 @@ footer .direccion span{
         width: 218px;
         height: 50px;
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    
+        text-decoration: none;
     }
     
-    .historia button:hover{
+    .historia a:hover{
         color: white;
+        text-decoration: none;
     }    
     
     .historia h3{
@@ -1827,7 +1820,7 @@ footer .direccion span{
         justify-content: center;
     }
     
-    .historia button{
+    .historia a{
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
@@ -1850,7 +1843,7 @@ footer .direccion span{
         transition: color 0.5s;
     }
     
-    .historia button::before{
+    .historia a::before{
         position: absolute;
         width: 218px;
         height: 50px;
@@ -1863,7 +1856,7 @@ footer .direccion span{
         opacity: 0;
     }
     
-    .historia button:hover::before{
+    .historia a:hover::before{
         opacity: 1;
         font-style: normal;
         font-weight: 500;
@@ -1876,11 +1869,12 @@ footer .direccion span{
         width: 218px;
         height: 50px;
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    
+        text-decoration: none;
     }
     
-    .historia button:hover{
+    .historia a:hover{
         color: white;
+        text-decoration: none;
     }    
     
     .historia h3{
@@ -2057,12 +2051,7 @@ footer .direccion span{
 }
 
 
-
-
-
-
 /* ---------------- Menu lateral ------------------- */
-
 
 .sidepanel {
     height: 100vh; 
@@ -2075,16 +2064,16 @@ footer .direccion span{
     overflow-x: hidden; 
     padding-top: 60px; 
     transition: 0.5s; 
-  }
+}
 
-  .mySidepanel_logo{
+.mySidepanel_logo{
     display: flex;
     justify-content: flex-start;
     align-items: center;
     margin-bottom: 7vh;
-  }
+}
 
-  .mySidepanel_logo a{
+.mySidepanel_logo a{
     position: absolute;
     top: 6px;
     left:15%;
@@ -2110,40 +2099,37 @@ footer .direccion span{
     text-transform: uppercase;
 }
 
-  .sidepanel a svg{
-      margin-right: 7vw;
-  }
-  
+.sidepanel a svg{
+    margin-right: 7vw;
+}  
  
-  .sidepanel a:hover {
+.sidepanel a:hover {
     color: #f1f1f1;
-  }
-  
-  
+}  
  
-  .sidepanel .closebtn {
-    padding: 20px 8px 8px 23px;
-    height: 20px ;
-    width: 20px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    font-size: 30px;
-    margin-left: 0px;
-  }
+.sidepanel .closebtn {
+padding: 20px 8px 8px 23px;
+height: 20px ;
+width: 20px;
+position: absolute;
+top: 0;
+left: 0;
+font-size: 30px;
+margin-left: 0px;
+}
  
-  .openbtn {
-    font-size: 20px;
-    cursor: pointer;
-    background-color: #F75E34;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-  }
+.openbtn {
+font-size: 20px;
+cursor: pointer;
+background-color: #F75E34;
+color: white;
+padding: 10px 15px;
+border: none;
+}
 
-  .item-menu{
-      width: 300px;
-  }
+.item-menu{
+    width: 300px;
+}
 
   /*------------------------ Loader 2 ------------------ */
 .loader-2 {

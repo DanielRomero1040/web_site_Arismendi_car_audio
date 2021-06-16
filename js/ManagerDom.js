@@ -39,7 +39,7 @@ class ManagerDom{
               </div>
               <div class="card-footer d-flex flex-column">
                 <div clas="d-flex flex-row justify-content-center align-items-center">
-                  <a class="consultaPrecio_boton " href="https://api.whatsapp.com/send?phone=5491157181985&text=Hola!%20estoy%20interesado%20en%20saber%20el%20precio%20de%20${element.nombre}">Consultá el precio<span><img src="../imagenes/icons/whatsappColor.svg" alt="" width="20px"> </span></a>
+                  <a class="consultaPrecio_boton " href="https://api.whatsapp.com/send?phone=5491124566055&text=Hola!%20estoy%20interesado%20en%20saber%20el%20precio%20de%20${element.nombre}">Consultá el precio<span><img src="../imagenes/icons/whatsappColor.svg" alt="" width="20px"> </span></a>
                 </div>                       
               </div>
           </div>
@@ -81,6 +81,16 @@ class ManagerDom{
 
   filtrarCategoria(id, event, handler){
     document.getElementById(id).addEventListener(event, handler);
+  }
+
+  borrarFiltrado(){
+    let cardsEnLocalStorage = JSON.parse(localStorage.getItem('productosEnPantalla'));
+    let cardsEnPantalla = cardsEnLocalStorage;
+    filtroPorTamano.value = 0;
+    filtroPorMultimedia.value = 0;
+    filtroPorSoftware.value = 0;
+
+    managerDOM.crearCard(cardsEnPantalla);
   }
 
 
@@ -127,31 +137,5 @@ class ManagerDom{
     
   }
 
-  filtrarPorPrecioDesdeHasta() {
-    let cardsEnLocalStorage = JSON.parse(localStorage.getItem('productosEnPantalla'));
-    let cardsEnPantalla = cardsEnLocalStorage;  
-    let valorInicial = document.getElementById('inicial').value;
-    let valorFinal = document.getElementById('final').value;  
-    let arrayPreFiltrado = [];
-    let arrayFiltrado = [];
-    estaFiltrado = `si`;
-
-    if ((valorInicial) && (valorFinal)){
-      arrayPreFiltrado = cardsEnPantalla.filter( el => el.price <= valorFinal);
-      arrayFiltrado = arrayPreFiltrado.filter( el => el.price >= valorInicial);
-    } 
-    else if((valorInicial != null) && (valorFinal)){
-      valorInicial = 0;
-      arrayPreFiltrado = cardsEnPantalla.filter( el => el.price <= valorFinal);
-      arrayFiltrado = arrayPreFiltrado.filter( el => el.price >= valorInicial);
-    } 
-    else if((valorInicial) && (valorFinal != null)){
-      valorFinal = 0;
-      arrayFiltrado = cardsEnPantalla.filter( el => el.price >= valorInicial);
-    }
-    else if((valorInicial != null) && (valorFinal != null)){
-      arrayFiltrado = cardsEnPantalla;
-    }
-    managerDOM.crearCard(arrayFiltrado);       
-    }
+ 
 }
