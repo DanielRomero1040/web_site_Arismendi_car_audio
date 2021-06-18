@@ -9,10 +9,6 @@ function openNav() {
   }
 
 
-// document.getElementById('filtros').addEventListener('click', ()=>{
-//   document.getElementById('collapseFiltros').style.display= "block";
-// })
-
 $('#filtros').on('click', function () {
   $('#collapseFiltros').slideToggle("slow");
 })
@@ -26,9 +22,19 @@ var scroll = new SmoothScroll('a[href*="#"]', {
 
 // ---------------  Incorporacion al DOM ----------------------------
 
-let filtroPorTamano = document.getElementById('tamano');
-let filtroPorMultimedia = document.getElementById('multimedia');
+
+      //------------------Equipos Dj---------------------
+let filtroPorTipo = document.getElementById('tipo');
+let filtroPorCanales = document.getElementById('canales');
 let filtroPorSoftware = document.getElementById('software');
+    //--------------------Car Audio------------------------
+let filtroPorSalida = document.getElementById('salida');
+let filtroPorDin = document.getElementById('din');
+let filtroPorAdroidApple = document.getElementById('androidApple');
+let filtroPorPioneer = document.getElementById('pioneer');
+let filtroPorMixtrax = document.getElementById('mixtrax');
+let filtroPorCd = document.getElementById('cd');
+
 let prodcutosBaseDatos = [];
 
 const managerDOM = new ManagerDom();
@@ -105,7 +111,5 @@ let animacionCarga = () => {
 //------------------------ Eventos ----------------------------------
 
 managerDOM.filtrarCategoria('buscarFiltros','click',managerDOM.filtrarPor);
-// managerDOM.filtrarCategoria('multimedia','change',managerDOM.filtrarPor);
-// managerDOM.filtrarCategoria('software','change',managerDOM.filtrarPor);
 managerDOM.filtrarCategoria('borrarFiltros','click',managerDOM.borrarFiltrado);
 
