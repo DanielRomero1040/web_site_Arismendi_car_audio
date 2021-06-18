@@ -608,24 +608,27 @@ footer .direccion span{
 
 .seccionDigitalizacion .card{
     width: 32.3rem;
-    height: 49rem;
-    background: #C4C4C4;
+    height: 51rem;
     border-radius: 8px;
     padding: 0;
     flex: 1 1 32.3rem;
-    flex: 0 1 32.3rem;
+    flex: 0 1 32.3rem;   
+    background: #FFFFFF;     
+    border: 0.5px solid rgba(141, 141, 141, 0.94);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 
 }
 
 .seccionDigitalizacion .card .card-footer p{
     font-size: 16px;
     font-weight: normal;
-    text-align: justify;
+    text-align: left;
 
 }
 
-.card-footer{
+.seccionDigitalizacion .card-footer{
     background-color:#c4c4c400;
+    padding: 15px 24px;
 }
 
 .seccionDigitalizacion .card .card-img-top{
@@ -676,7 +679,7 @@ footer .direccion span{
 .card-body h5{
     text-transform: capitalize;
     height: 50px;
-    text-align: justify;
+    text-align: left;
 }
 
 .contenido .products-card > .card-footer{
