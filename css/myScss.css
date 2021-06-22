@@ -1746,20 +1746,16 @@ footer .direccion span {
     text-align: start;
     text-shadow: 6px 5px 4px rgba(0, 0, 0, 0.27);
   }
+  .tituloCarousel_carAudio{
+    display:none;
+  }
   .carouselCaption p {
     display: none;
   }
   .carouselCaption a {
     display: none;
   }
-  /* .banner1{
-        background-image: url("../imagenes/bannerMobileHome.png");
-        background-size: cover;        
-        width: 100vw;
-        height: 645px;
-        min-width: 100%;
-        background-position: center;
-    }  */
+
   .banner2 {
     background-image: url("../imagenes/banner_car_audio_mobile.jpg");
     background-size: cover;
@@ -1780,8 +1776,6 @@ footer .direccion span {
   .seccionDigitalizacion {
     padding: 3rem 0;
     height: auto;
-    /* width: 100vw; */
-    /* grid-template-columns: repeat(4,323px); */
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
