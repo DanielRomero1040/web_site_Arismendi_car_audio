@@ -72,13 +72,11 @@ function fetchProductos(url){
   animacionCarga();
   fetch(url)
     .then(respuesta => {
-      console.log(respuesta)
       return respuesta.json();
     })
     .then( productos => {
       productosBaseDatos = [...productos];
       localStorage.setItem('productosEnPantalla',JSON.stringify(productosBaseDatos));
-      console.log('productos',productosBaseDatos);
       managerDOM.crearCard(productos);   
     })
     .catch(e => console.log(e));
@@ -88,11 +86,9 @@ function fetchProductosDigitalizacion(url){
   animacionCarga();
   fetch(url)
     .then(respuesta => {
-      console.log(respuesta)
       return respuesta.json();
     })
     .then( productos => {
-      console.log(productos)
       managerDOM.crearCardDigitalizacion(productos);    
     })
     .catch(e => console.log(e));

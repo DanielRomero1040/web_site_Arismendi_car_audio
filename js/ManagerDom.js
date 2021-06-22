@@ -122,8 +122,8 @@ class ManagerDom{
       filtroPorCanales.value = 0;
       filtroPorSoftware.value = 0;
     }
-
-    managerDOM.crearCard(cardsEnPantalla);
+    animacionCarga();
+    setTimeout(() => {managerDOM.crearCard(cardsEnPantalla)}, 500 );
   }
 
 
@@ -201,9 +201,8 @@ class ManagerDom{
       }
   
       animacionCarga();
-      console.log('arrayfiltrado',arrayFiltrado)
       localStorage.setItem('arrayFiltrado',JSON.stringify(arrayFiltrado));
-      managerDOM.crearCard(arrayFiltrado);
+      setTimeout(() => {managerDOM.crearCard(arrayFiltrado)}, 500 );
   
     }else if(nombre_archivo === "equipoDeDj.html"){
       
@@ -258,9 +257,9 @@ class ManagerDom{
       }
   
       animacionCarga();
-      console.log('arrayfiltrado',arrayFiltrado)
       localStorage.setItem('arrayFiltrado',JSON.stringify(arrayFiltrado));
-      managerDOM.crearCard(arrayFiltrado);
+      setTimeout(() => {managerDOM.crearCard(arrayFiltrado)}, 500 );
+      
       
     }
 
