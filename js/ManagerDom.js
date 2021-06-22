@@ -257,7 +257,6 @@ class ManagerDom{
       }
   
       animacionCarga();
-      console.log(arrayFiltrado)
       localStorage.setItem('arrayFiltrado',JSON.stringify(arrayFiltrado));
       setTimeout(() => {managerDOM.crearCard(arrayFiltrado)}, 500 );
       
