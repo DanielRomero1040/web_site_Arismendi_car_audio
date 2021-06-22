@@ -155,19 +155,19 @@ header{
 }
 
 .banner1{
-    background-image: url("../imagenes/banner-digitalizacion.JPG");    
+    background-image: url("../imagenes/banner-digitalizacion.jpg");    
     height: 645px;
     background-position: center;
     background-size: cover;
 }
 .banner2{
-    background-image: url("../imagenes/banner-caraudio.png");
+    background-image: url("../imagenes/banner-caraudio.jpg");
     height: 645px;
     background-position: center;
     background-size: cover;
 }
 .banner3{
-    background-image: url("../imagenes/banner-equipo-dj.HEIC");
+    background-image: url("../imagenes/banner-equipo-dj.jpg");
     height: 645px;
     background-position: center;
     background-size: cover;
@@ -214,7 +214,6 @@ header{
     position: absolute;
     width: 208px;
     height: 39px;
-    background-color: rgba(184, 175, 175, 0);
     border: 1.5px solid rgba(255, 255, 255, 0.97);
     box-sizing: border-box;
     border-radius: 8px;
@@ -231,7 +230,9 @@ header{
     background-color: rgb(0, 0, 0);
     border: 1.5px solid rgba(0, 0, 0, 0.97);
     text-decoration: none;
+    border: 1.5px solid rgba(255, 255, 255, 0.97);
 }
+
 
 .bannerDigitalizacion {
     position: absolute;
@@ -254,6 +255,7 @@ header{
     text-transform: uppercase;
     color: #FFFFFF;
     text-align: start;
+    filter: drop-shadow(1px 4px 7px rgba(0, 0, 0, 0.25));
 }
 
 .bannerDigitalizacion p{
@@ -293,14 +295,14 @@ header{
 }
 
 .banner_dj{
-    background-image: url("../imagenes/banner_seccion_dj.HEIC");
+    background-image: url("../imagenes/banner_seccion_dj.jpg");
     height: 645px;
     background-position: center;
     background-size: cover;
 }
 
 .banner_carAudio{
-    background-image: url("../imagenes/banner_seccion_car_audio.HEIC");
+    background-image: url("../imagenes/banner_seccion_car_audio.jpg");
     height: 645px;
     background-position: center;
     background-size: cover;
@@ -1567,10 +1569,19 @@ footer .direccion span{
     
     .carouselCaption a{    
         display: none;
-    }   
+    }  
+    
+    /* .banner1{
+        background-image: url("../imagenes/bannerMobileHome.png");
+        background-size: cover;        
+        width: 100vw;
+        height: 645px;
+        min-width: 100%;
+        background-position: center;
+    }  */
 
-    /* .banner2{
-        background-image: url("../imagenes/bannerMobileDigitalizacion.png");
+    .banner2{
+        background-image: url("../imagenes/banner_car_audio_mobile.jpg");
         background-size: cover;        
         width: 100vw;
         height: 645px;
@@ -1578,14 +1589,14 @@ footer .direccion span{
         background-position: center;
     }
 
-    .banner1, .banner3{
-        background-image: url("../imagenes/bannerMobileHome.png");
+    .banner3{
+        background-image: url("../imagenes/banner_dj_mobile.jpg");
         background-size: cover;        
         width: 100vw;
         height: 645px;
         min-width: 100%;
         background-position: center;
-    } */
+    } 
 
     /*--------------------- Digitalizacion ------------------------*/
     .seccionDigitalizacion{
@@ -1654,6 +1665,13 @@ footer .direccion span{
     /*------------------ Car Audio-------------------*/
     body{
         min-width: 370px;
+    }
+
+    .banner_carAudio{
+        background-image: url("../imagenes/banner_seccion_car_audio_mobile.jpg");
+        height: 645px;
+        background-position: center;
+        background-size: cover;
     }
 
     .bannerCarAudio {        
