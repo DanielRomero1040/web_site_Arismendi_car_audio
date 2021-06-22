@@ -243,20 +243,21 @@ class ManagerDom{
   
   
       if (valorFiltroSoftware == 1) {
-        arrayFiltrado = arrayFiltrado.filter( el => el.software == "Rekordbox")
+        arrayFiltrado = arrayFiltrado.filter( el =>  el.software.indexOf('Rekordbox') > -1)
       } else if (valorFiltroSoftware == 2) {
-        arrayFiltrado = arrayFiltrado.filter( el => el.software == "Rekordbox, Serato DJ Pro")
+        arrayFiltrado = arrayFiltrado.filter( el => el.software.indexOf('Rekordbox, Serato DJ Pro') > -1)
       } else if (valorFiltroSoftware == 3) {
-        arrayFiltrado = arrayFiltrado.filter( el => el.software == "Rekordbox, Serato DJ PRO, TRAKTOR PRO 3")
+        arrayFiltrado = arrayFiltrado.filter( el => el.software == "Rekordbox, Serato DJ Pro, TRAKTOR PRO 3")
       } else if (valorFiltroSoftware == 4) {
-        arrayFiltrado = arrayFiltrado.filter( el => el.software == "Serato DJ")
+        arrayFiltrado = arrayFiltrado.filter( el => el.software.indexOf('Serato DJ') > -1)
       } else if (valorFiltroSoftware == 5) {
-        arrayFiltrado = arrayFiltrado.filter( el => el.software == "Serato DJ Pro")
+        arrayFiltrado = arrayFiltrado.filter( el =>  el.software.indexOf('Serato DJ Pro') > -1)
       } else if (valorFiltroSoftware == 0) {
         arrayFiltrado = arrayFiltrado;
       }
   
       animacionCarga();
+      console.log(arrayFiltrado)
       localStorage.setItem('arrayFiltrado',JSON.stringify(arrayFiltrado));
       setTimeout(() => {managerDOM.crearCard(arrayFiltrado)}, 500 );
       
