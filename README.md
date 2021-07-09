@@ -10,22 +10,18 @@ las cards de los productos, de esta manera garantizamos una mejor experiencia de
 _A continuación parte de las herramientas y tecnologías utilizadas._
 
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white&labelColor=101010)](#)
-</br>
 [![Html5 Follow](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white&labelColor=101010)](#)
-</br>
 [![css3 Follow](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white&labelColor=101010)](#)
 </br>
 [![Bootstrap Follow](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white&labelColor=101010)](#)
-</br>
 [![AJAX](https://img.shields.io/badge/AJAX-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white&labelColor=101010)](#)
-</br>
 [![jQuery](https://img.shields.io/badge/jQuery-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white&labelColor=101010)](#)
 </br>
 [![JSON Follow](https://img.shields.io/badge/json-E34F26?style=for-the-badge&logo=javascript&logoColor=white&labelColor=101010)](#)
-</br>
 
 
-![IMI MELI](https://github.com/DanielRomero1040/work_space_ecommerce_beginner/blob/main/imagenes/Mockup%20Meli.png)
+
+![ArismendiCarAudio](https://github.com/DanielRomero1040/web_site_Arismendi_car_audio/blob/main/imagenes/MockupArismendi.png)
 
 
 ## Muchas gracias por tomarte el tiempo en revisar mi trabajo! 🎁
@@ -38,5 +34,5 @@ _A continuación parte de las herramientas y tecnologías utilizadas._
 
 
 ---
-📌 [Sitio Web de IMI MELI 1.0 ](https://danielromero1040.github.io/work_space_ecommerce_beginner/) 😊
+📌 [Sitio Web Arismendi Car Audio](https://danielromero1040.github.io/web_site_Arismendi_car_audio/) 😊
 
