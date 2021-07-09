@@ -27,8 +27,7 @@ _A continuación parte de las herramientas y tecnologías utilizadas._
 ## Muchas gracias por tomarte el tiempo en revisar mi trabajo! 🎁
 
 * Comenta a otros sobre este proyecto 📢
-* Invita una cerveza 🍺 o un café ☕ a alguien del equipo. 
-* Da las gracias públicamente 🤓.
+* Invita una pizza 🍕 o un café ☕ a alguien del equipo.
 * etc.
 
 
