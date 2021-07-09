@@ -15,9 +15,9 @@ _A continuación parte de las herramientas y tecnologías utilizadas._
 </br>
 [![Bootstrap Follow](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white&labelColor=101010)](#)
 [![AJAX](https://img.shields.io/badge/AJAX-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white&labelColor=101010)](#)
-[![jQuery](https://img.shields.io/badge/jQuery-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white&labelColor=101010)](#)
+[![jQuery](https://img.shields.io/badge/jQuery-1572B6?style=for-the-badge&logo=jquery&logoColor=white&labelColor=101010)](#)
 </br>
-[![JSON Follow](https://img.shields.io/badge/json-E34F26?style=for-the-badge&logo=javascript&logoColor=white&labelColor=101010)](#)
+[![JSON Follow](https://img.shields.io/badge/json-E34F26?style=for-the-badge&logo=json&logoColor=white&labelColor=101010)](#)
 
 
 
